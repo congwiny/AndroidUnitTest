@@ -19,7 +19,7 @@ import static org.mockito.Mockito.when;
  */
 
 public class Mockito_5_StubTest {
-    @Mock //<--使用@Mock注解
+    @Mock //<--使用@Mock注解，调用模拟对象的实现（默认数据都为null或0）
     private Person mPerson;
 
     @Rule //<--使用@Rule
@@ -46,6 +46,8 @@ public class Mockito_5_StubTest {
         doReturn("笑笑").when(mPerson).getName();
         // 输出"笑笑"
         System.out.println(mPerson.getName());
+        //输出 0
+        System.out.println(mPerson.getAge());
     }
 
     @Test
