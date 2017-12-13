@@ -2,6 +2,7 @@ package com.congwiny.androidunittest.junit;
 
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
+import org.junit.Rule;
 import org.junit.Test;
 
 import java.util.regex.Matcher;
@@ -19,6 +20,8 @@ import static org.junit.Assert.assertThat;
  * assertThat(String reason, T actual, Matcher<? super T> matcher);
  */
 public class AssertThatTest {
+    @Rule
+    public MyRule myRule = new MyRule();
 
     @Test
     public void testMobilePhone() throws Exception {
