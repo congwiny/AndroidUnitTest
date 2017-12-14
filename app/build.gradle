@@ -25,5 +25,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    testImplementation "org.mockito:mockito-core:2.13.0"
+
+    testImplementation "org.mockito:mockito-core:2.8.9"
+
+    testImplementation "org.powermock:powermock-module-junit4:1.7.3"
+    testImplementation "org.powermock:powermock-module-junit4-rule:1.7.3"
+    testImplementation "org.powermock:powermock-api-mockito2:1.7.3" //注意这里是mockito2
+    testImplementation "org.powermock:powermock-classloading-xstream:1.7.3"
 }
